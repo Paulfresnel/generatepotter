@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { Leap } from "@leap-ai/sdk";
 
-const MODEL_ID = "e62a3f3f-cce4-4cac-826b-d22e93f687d4";
+const MODEL_ID = "dd0278b6-6fee-4cb1-b4ff-19eddbfd855b";
 const IMAGE_WIDTH = 600;
 const IMAGE_HEIGHT = 400;
 
@@ -21,7 +21,7 @@ const generate = async (req: NextApiRequest, res: NextApiResponse) => {
     prompt,
     width: IMAGE_WIDTH,
     height: IMAGE_HEIGHT,
-    numberOfImages: 1,
+    numberOfImages: 2,
   });
 
   if (error) {

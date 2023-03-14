@@ -68,8 +68,8 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="Generate Potter"
-        description="Generate Potter is a web app that uses the LeapML API to generate images of Harry Potter. It's built with Next.js, Chakra UI, and Leap AI."
+        title="Generate Paul"
+        description="Generate Paul is a web app that uses the LeapML API to generate unique images of Me :). It's built with Next.js, Chakra UI, and Leap AI."
       />
       <VStack
         minH="100vh"
@@ -97,7 +97,7 @@ const Home = () => {
             textAlign="center"
             fontFamily="monospace"
           >
-            Enter a prompt like "@harry as a cat" to generate an image.
+            Enter a prompt like "@me as a cat" to generate an image.
           </Text>
         </VStack>
 
