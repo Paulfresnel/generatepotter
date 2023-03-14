@@ -45,7 +45,7 @@ const Home = () => {
     }
 
     // hit leap in our nextjs api route
-    const response = await fetch("/api/generate", {
+    const response = await fetch("./api/generate.ts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
