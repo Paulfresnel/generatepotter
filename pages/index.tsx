@@ -26,7 +26,7 @@ const Home = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   const [images, setImages] = useState<string[]>([
-    "https://media.licdn.com/dms/image/C4D03AQHkKP69c7D2eg/profile-displayphoto-shrink_200_200/0/1544021018763?e=1684368000&v=beta&t=APn6W8naz7G3YuyfRvYBJw8h6ooNKh1XUwIWrjDrEmM",
+    "https://media.licdn.com/dms/image/C5603AQGb0Mlv1d-ATw/profile-displayphoto-shrink_200_200/0/1653565079356?e=1684368000&v=beta&t=-2Iu2g8O6mvEYlx_hiDZklQrrQfCBOzWvTO8AyycKdk",
   ]);
 
   const toast = useToast();
@@ -68,8 +68,8 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="Generate Paul"
-        description="Generate Paul is a web app that uses the LeapML API to generate unique images of Me :). It's built with Next.js, Chakra UI, and Leap AI."
+        title="Generate Ankita"
+        description="Generate Ankita is a web app that uses the LeapML API to generate unique images of Ankita :). It's built with Next.js, Chakra UI, and Leap AI."
       />
       <VStack
         minH="100vh"
@@ -141,7 +141,7 @@ const Home = () => {
             <Image
               key={image}
               src={image}
-              alt="Harry Potter"
+              alt="Ankita Potter"
               rounded="lg"
               w="full"
               h={{ base: "3/4", md: "20rem" }}
