@@ -97,7 +97,7 @@ const Home = () => {
             textAlign="center"
             fontFamily="monospace"
           >
-            Enter a prompt like "@me as a cat" to generate an image.
+            Enter a prompt like "@ankita as a cat" to generate an image.
           </Text>
         </VStack>
 
@@ -192,7 +192,7 @@ const Home = () => {
           }
         >
           <AiFillGithub color="black" />
-          <Text fontWeight={"bold"} color={"#1c1c1c"}>
+          <Text className="margin-top" fontWeight={"bold"} color={"#1c1c1c"}>
             Train Your Own Character
           </Text>
         </HStack>
