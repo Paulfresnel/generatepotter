@@ -28,7 +28,7 @@ const generate = async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(500).json(error);
     return;
   }
-
+  console.log(data)
   res.status(200).json(data);
 };
 

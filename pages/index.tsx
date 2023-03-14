@@ -62,6 +62,7 @@ const Home = () => {
     // set images array, to switch the default image
     const uris = image.images.map((image: { uri: string }) => image.uri);
     setImages(uris);
+    console.log(uris)
     setLoading(false);
   };
 
