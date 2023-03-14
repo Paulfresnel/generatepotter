@@ -26,7 +26,7 @@ const Home = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   const [images, setImages] = useState<string[]>([
-    "https://generatepotter.com/default.png",
+    "https://media.licdn.com/dms/image/C4D03AQHkKP69c7D2eg/profile-displayphoto-shrink_200_200/0/1544021018763?e=1684368000&v=beta&t=APn6W8naz7G3YuyfRvYBJw8h6ooNKh1XUwIWrjDrEmM",
   ]);
 
   const toast = useToast();
