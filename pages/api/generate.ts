@@ -21,7 +21,7 @@ const generate = async (req: NextApiRequest, res: NextApiResponse) => {
     prompt,
     width: IMAGE_WIDTH,
     height: IMAGE_HEIGHT,
-    numberOfImages: 2,
+    numberOfImages: 1,
   });
 
   if (error) {
