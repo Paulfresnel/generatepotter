@@ -19,16 +19,17 @@ const generate = async (req: NextApiRequest, res: NextApiResponse) => {
   const { data, error } = await leap.generate.generateImage({
     modelId: MODEL_ID,
     prompt,
+    steps: 35,
     width: IMAGE_WIDTH,
     height: IMAGE_HEIGHT,
-    numberOfImages: 1,
+    numberOfImages: 2,
   });
-
+  console.log(data)
   if (error) {
+    console.log(error)
     res.status(500).json(error);
     return;
   }
-  console.log(data)
   res.status(200).json(data);
 };
 

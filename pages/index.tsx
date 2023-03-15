@@ -45,7 +45,7 @@ const Home = () => {
     }
 
     // hit leap in our nextjs api route
-    const response = await fetch("./api/generate.ts", {
+    const response = await fetch("api/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +53,6 @@ const Home = () => {
       body: JSON.stringify({ prompt }),
     });
     const image = await response.json();
-    console.log(image);
     if (image.error) {
       window.alert("Error: " + image.error + " " + image.message);
       setLoading(false);
@@ -62,7 +61,6 @@ const Home = () => {
     // set images array, to switch the default image
     const uris = image.images.map((image: { uri: string }) => image.uri);
     setImages(uris);
-    console.log(uris)
     setLoading(false);
   };
 
@@ -89,7 +87,7 @@ const Home = () => {
             color="gray.200"
             fontFamily="harryfont"
           >
-            Generate Potter.
+            Generate a Kita 👾 ⚡️
           </Heading>
           <Text
             color="gray.300"
